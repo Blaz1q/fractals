@@ -1,0 +1,132 @@
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  background-color: light-dark(rgb(224, 255, 228), rgb(6, 1, 16));
+  color: rgb(6, 1, 16);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 1em;
+  transition: 0.2s;
+}
+
+.light {
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+canvas {
+  background-color: light-dark(rgb(6, 1, 16), rgb(224, 255, 228));
+  border-radius: 1em;
+  border: 0.2em solid light-dark(rgb(6, 1, 16), rgb(224, 255, 228));
+}
+
+.center {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.menu-button {
+  aspect-ratio: 1/1;
+  border-radius: 0.4em;
+  border: 0.2em solid light-dark(rgb(6, 1, 16), rgb(224, 255, 228));
+  color: light-dark(rgb(6, 1, 16), rgb(224, 255, 228));
+  background-color: transparent;
+  transition: 0.1s;
+}
+
+.menu-button:hover {
+  background-color: rgba(255, 255, 255, 0.5960784314);
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 0;
+  transition: 0.5s;
+  transition-property: width;
+  overflow: hidden;
+  gap: 0.5em;
+  color: light-dark(rgb(6, 1, 16), rgb(224, 255, 228));
+  overflow: auto;
+}
+.menu section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu label {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 0.2em;
+}
+
+.option {
+  border: 0.2em solid light-dark(rgb(6, 1, 16), rgb(224, 255, 228));
+  border-radius: 1em;
+  min-height: 3em;
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+.option h1 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  text-align: center;
+}
+.option input {
+  border: 0.2em solid light-dark(rgb(6, 1, 16), rgb(224, 255, 228));
+  background-color: transparent;
+  color: light-dark(rgb(6, 1, 16), rgb(224, 255, 228));
+}
+.option hr {
+  width: 120%;
+  border: 1px solid rgb(148, 148, 148);
+}
+
+.option-button {
+  width: 100%;
+  height: 4em;
+  border: none;
+  color: light-dark(rgb(6, 1, 16), rgb(224, 255, 228));
+  background-color: transparent;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  transition: 0.1s;
+}
+
+.option-button:hover {
+  background-color: rgba(167, 166, 166, 0.5137254902);
+}
+
+.color-scheme-switch {
+  color: light-dark(rgb(6, 1, 16), rgb(224, 255, 228));
+  border: 0.2em solid light-dark(rgb(6, 1, 16), rgb(224, 255, 228));
+  background-color: light-dark(rgb(224, 255, 228), rgb(6, 1, 16));
+  border-radius: 0.2em;
+  transition: 0.1s;
+}
+
+.color-scheme-switch:hover {
+  background-color: rgba(167, 166, 166, 0.5137254902);
+}
+
+.expand {
+  margin: 0;
+  overflow: hidden;
+  transition: 0.4s;
+  transition-property: height;
+}/*# sourceMappingURL=styles.css.map */

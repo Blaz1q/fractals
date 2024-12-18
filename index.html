@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fractals</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style id="generated"></style>
+</head>
+<body class="dark-mode" onload="loadToggle()">
+    <section class="center">
+        <canvas id="main_canvas" width="400" height="300"></canvas>
+        <div id="progress">
+            <progress id="progressbar" max="1" value="0"></progress>
+        </div>
+        
+    </section>
+    <section style="display: flex;align-items: flex-start;">
+    <button onclick="toggleMenu()" class="menu-button">menu</button>
+    <section class="menu">
+        <section class="animation">
+            <button>Animation</button>
+            <section>
+                <br>
+                <label>Width<input type="number" onchange="changeWidth()" id="width" min="2" value="400" /></label>
+                <label>Height<input type="number" onchange="changeHeight()" id="height" min="1" value="300" /></label>
+                <label>Speed<input type="number" onchange="changeSpeed()" id="speed" min="1" value="100" /></label>
+            </section>
+        </section>
+        <section class="render">
+            <button>Render</button>
+            <section>
+                <br>
+                <label>Max Iterations<input type="number" value="60" min="10" onchange="changeIterations()" id="iterations"></label>
+                <button class="disable" onclick="clearFrames(); clearCanvas()">Clear frames</button>
+            </section>
+        </section>
+        <section class="mandelbrot">
+            <button>Mandelbrot</button>
+                <section>
+                    <br>
+                    <label>Power
+                    <input type="number" id="stala" value="1" step="0.1"></label>
+                    <button class="disable" onclick="draw()">Draw</button>
+                    <hr>
+                    <label>From
+                    <input type="number" id="mandelbrotFrom" value="2"  /></label>
+                    <label>To
+                    <input type="number" id="mandelbrotTo" value="5"  /></label>
+                    <label>Step
+                    <input type="number" id="mandelbrotStep" value="0.1"  /></label>
+                    <button class="disable" onclick="runAnimateMandelbrot()">Animate</button>
+                </section>
+            </section>
+        <section class="julia">
+            <button>Julia</button>
+            <section>
+                <br>
+                <label for="">Power
+                <input type="number" id="power" value="2" min="2" step="1" /></label>
+                <label for="cx">c (Real Part):
+                <input type="number" id="cx" value="-0.7" step="0.01"  /></label>
+                <label for="cy">c (Imaginary Part):
+                <input type="number" id="cy" value="0.27015" step="0.01" /></label>
+                <button class="disable" onclick="drawJulia()">Draw Julia Set</button>    
+                <hr>
+                <label>Animate on:
+                    <select name="juliaSelect" id="juliaSelect">
+                        <option value="1">c Re</option>
+                        <option value="2">c Im</option>
+                        <option value="3">power</option>
+                    </select>
+                </label>
+                    <label>From
+                    <input type="number" id="juliaFrom" value="2"  /></label>
+                    <label>To
+                    <input type="number" id="juliaTo" value="5"  /></label>
+                    <label>Step
+                    <input type="number" id="juliaStep" value="0.1"  /></label>
+                    <button class="disable" onclick="runAniamteJulia()">Animate</button>
+            </section>
+        </section>
+        <section>
+            <button>Set constraints</button>
+            <section>
+                <label>divide sets by <input type="number" id="divide" value="2"></label>
+                <button onclick="divideSets()">divide</button>
+                <button onclick="resetSets()">reset sets</button>
+                <h5>Real set</h5>
+                <label>Start
+                    <input type="number" class="disable" onchange="changeRealSet()" id="realstart" value="-2.2" step="0.1"  /></label>
+                    <label>End
+                    <input type="number" class="disable" onchange="changeRealSet()" id="realend" value="2.2" step="0.1"  /></label>
+                    <h5>Imaginary set</h5>
+                    <label>Start
+                        <input type="number" class="disable" onchange="changeImaginarySet()" id="imstart" value="-1.65" step="0.1"  /></label>
+                        <label>End
+                        <input type="number" class="disable" onchange="changeImaginarySet()" id="imend" value="1.65" step="0.1" /></label>
+            </section>
+        </section>
+        <section class="settings">
+            <button>Settings</button>
+            <section>
+                <br>
+                <button class="color-scheme-switch" onclick="toggleDayNight()">Light/DarkMode</button> 
+            </section>
+        </section>
+    </section>
+    </section>
+</body>
+</html>
