@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fractals</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="common.css">
     <script defer src="script.js"></script>
     <style id="generated"></style>
 </head>
 <body class="dark-mode" onload="loadToggle()">
-    <section class="center">
+    <div>
+<section class="center">
         <canvas id="main_canvas" width="400" height="300"></canvas>
         <div id="progress">
             <progress id="progressbar" max="1" value="0"></progress>
         </div>
-        
     </section>
     <section style="display: flex;align-items: flex-start;">
     <button onclick="toggleMenu()" class="menu-button">menu</button>
@@ -106,7 +107,13 @@
                 <button class="color-scheme-switch" onclick="toggleDayNight()">Light/DarkMode</button> 
             </section>
         </section>
+        <a href="https://github.com/Blaz1q/" class="github">
+            <img src="https://avatars.githubusercontent.com/u/57396007?v=4" />
+            <p>Check out my github!</p>
+        </a>
     </section>
     </section>
+    </div>
+    
 </body>
 </html>

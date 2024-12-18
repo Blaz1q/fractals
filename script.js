@@ -61,7 +61,7 @@ function loadToggle(){
     var stylesheet = document.getElementById("generated");
     var menu = document.getElementsByClassName('menu')[0];
     var length = menu.children.length;
-    for(var i=0;i<length;i++){
+    for(var i=0;i<length-1;i++){
         optionToggle.push(false);
         menu.children[i].children[0].setAttribute("onclick",`toggleOption(${i})`);
         menu.children[i].classList.add("option");

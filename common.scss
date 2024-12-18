@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    font-family: "Inter", sans-serif;
+    font-size: small;
+}
+$lighter: #ffffff;
+$light: #f5fef3;
+$dark: #111111;
+$darker: #000008;
+.github{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background-color: light-dark($darker,$lighter);
+    border-radius: 100em;
+    padding: .2em;
+    gap: .3em;
+    width: min-content;
+    text-decoration: none;
+    white-space: nowrap;
+    color: light-dark($lighter,$darker);
+    font-size: small;
+    font-weight: bold;
+    margin: auto;
+    p{
+        line-height: 0;
+        margin-left: .5em;
+        margin-right: .5em;
+    }
+    img{
+        width: 3em;
+        height: 3em;
+        border-radius: 100%;
+    }
+    transition: gap .4s;
+}
+.github:hover{
+    gap: 1em;
+}

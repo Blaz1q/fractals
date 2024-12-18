@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  font-family: "Inter", sans-serif;
+  font-size: small;
+}
+
+.github {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  background-color: light-dark(#000008, #ffffff);
+  border-radius: 100em;
+  padding: 0.2em;
+  gap: 0.3em;
+  width: -moz-min-content;
+  width: min-content;
+  text-decoration: none;
+  white-space: nowrap;
+  color: light-dark(#ffffff, #000008);
+  font-size: small;
+  font-weight: bold;
+  margin: auto;
+  transition: gap 0.4s;
+}
+.github p {
+  line-height: 0;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+.github img {
+  width: 3em;
+  height: 3em;
+  border-radius: 100%;
+}
+
+.github:hover {
+  gap: 1em;
+}/*# sourceMappingURL=common.css.map */

@@ -5,11 +5,14 @@
 body {
   background-color: light-dark(rgb(224, 255, 228), rgb(6, 1, 16));
   color: rgb(6, 1, 16);
+  margin-top: 1em;
+  transition: 0.2s;
+}
+
+div {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-top: 1em;
-  transition: 0.2s;
 }
 
 .light {
