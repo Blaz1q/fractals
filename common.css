@@ -23,7 +23,6 @@
   transition: gap 0.4s;
 }
 .github p {
-  line-height: 0;
   margin-left: 0.5em;
   margin-right: 0.5em;
 }

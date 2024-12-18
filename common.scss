@@ -23,7 +23,6 @@ $darker: #000008;
     font-weight: bold;
     margin: auto;
     p{
-        line-height: 0;
         margin-left: .5em;
         margin-right: .5em;
     }
@@ -31,6 +30,7 @@ $darker: #000008;
         width: 3em;
         height: 3em;
         border-radius: 100%;
+        
     }
     transition: gap .4s;
 }

@@ -9,8 +9,6 @@ body{
     color: $sec;
     margin-top: 1em;
     transition: .2s;
-}
-div{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -41,6 +39,7 @@ canvas{
     color: light-dark($sec,$main);
     background-color: transparent;
     transition: .1s;
+    overflow: hidden;
 }
 .menu-button:hover{
     background-color: #ffffff98;;
